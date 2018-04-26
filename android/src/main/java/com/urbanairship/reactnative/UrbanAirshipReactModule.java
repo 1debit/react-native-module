@@ -39,6 +39,7 @@ import com.urbanairship.actions.ActionRunRequest;
 import com.urbanairship.analytics.AssociatedIdentifiers;
 import com.urbanairship.push.PushMessage;
 import com.urbanairship.push.TagGroupsEditor;
+import com.urbanairship.push.notifications.NotificationFactory;
 import com.urbanairship.reactnative.events.NotificationOptInEvent;
 import com.urbanairship.reactnative.events.PushReceivedEvent;
 import com.urbanairship.richpush.RichPushInbox;
