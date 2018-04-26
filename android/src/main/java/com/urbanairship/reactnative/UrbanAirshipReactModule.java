@@ -759,6 +759,15 @@ public class UrbanAirshipReactModule extends ReactContextBaseJavaModule {
                 .apply();
     }
 
+    @ReactMethod
+    public void setNotificationSound(String soundString)
+    {
+        Uri soundUri = Uri.parse(soundString);
+        NotificationFactory notificationFactory = UAirship.shared().getPushManager().getNotificationFactory();
+        notificationFactory.setSound(soundUri);
+        UAirship.shared().getPushManager().setNotificationFactory(notificationFactory);
+    }
+
     /**
      * Helper method to apply tag group changes.
      *
